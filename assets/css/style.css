@@ -3,6 +3,7 @@
     --loader-bg: radial-gradient(circle closest-side, #111018 94%, rgba(0, 0, 0, 0)) right/calc(200% - 1em) 100%;
     --loader-text-bg: radial-gradient(circle closest-side, #ffffff 94%, #111018);
     --primary-color: #5b4da4;
+    --primary-hover-color:#4d418b;
     --text-primary: rgba(91, 77, 164, 1);
     --link-color: #75758d;
     --link-hover-color: #383848;
@@ -132,6 +133,10 @@ body {
 .btn-primary {
     color: #ffffff;
     background-color: var(--primary-color);
+}
+
+.btn-primary:hover{
+    background-color:var(--primary-hover-color);
 }
 
 .text-primary {
