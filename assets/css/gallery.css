@@ -104,3 +104,6 @@
 .cross-svg{
   fill: #999999;
 }
+.cross-svg:hover{
+  fill: #fff !important;
+}
