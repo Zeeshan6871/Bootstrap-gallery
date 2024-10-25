@@ -1365,7 +1365,6 @@
           </div>
           <!-- App body ends -->
 
-
           <!-- App footer starts -->
           <div class="app-footer bg-white">
             <span>© Bootstrap Gallery 2024</span>
@@ -1385,16 +1384,34 @@
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
     >
-      <button
+      <div
         type="button"
         data-bs-dismiss="modal"
         aria-label="Close"
-        class="btn-close z-1030 bg-danger"
-        style="position: absolute; top: 20px; right: 40px"
-      ></button>
+        style="
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 20px 40px;
+          z-index: 2000;
+        "
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="15"
+          height="15"
+          viewBox="0 0 50 50"
+          class="cross-svg"
+        >
+          <path
+            d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"
+          ></path>
+        </svg>
+      </div>
+
       <button
         class="carousel-control-prev"
         type="button"
@@ -1418,7 +1435,7 @@
         style="width: 300px; height: 300px"
       >
         <div class="modal-content">
-          <div id="carouselExample" class="carousel slide">
+          <div id="carouselExample" class="carousel slide carousel-fade">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
@@ -1510,7 +1527,6 @@
       </div>
     </div>
 
-    
     <!-- *************
 			************ JavaScript Files *************
 		************* -->
